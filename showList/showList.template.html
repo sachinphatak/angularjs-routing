@@ -1,7 +1,5 @@
 <ol> 
     <li ng-repeat="bike in bikeList | orderBy: 'name'">
-        <a ui-sref="listDetailView({url:bike.name})">
-            <button ng-click="bikeToShow({item: bike})">{{bike.name}}</button><br></br>
-        </a>
+        <button ng-click="itemClicked({item: bike})">{{bike.name}}</button><br></br>
     </li>
 </ol>
